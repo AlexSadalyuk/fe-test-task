@@ -6,6 +6,10 @@ let prevValCounter = 0;
 
 counter.addEventListener('keyup', function() {
     
+    if(isNaN(counter.value.trim())){
+        return;
+    }
+
     let count = parseInt(counter.value.trim());
 
     if(prevValCounter != count) {
