@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Header</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col s4 offset-s4 guests-block">
+            <form id="guests">
+                <div class="input-field guest-count hoverable">
+                    <input placeholder="Count of guests" id="guest-count" name="guest-count" type="text" >
+                </div>
+
+                <div class="card hoverable guest-list">
+                    <div class="card-header">
+                        <span class="card-title">Fill guests</span>
+                    </div>
+                    <div class="card-content collection" id="collection-guests">
+
+                    </div>
+                </div>
+
+                <div class="card hoverable guest-list">
+                    <div class="card-header">
+                        <span class="card-title">Guests</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="collection" id="guests-list"> 
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
